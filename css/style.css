@@ -1,0 +1,34 @@
+.dino-loader {
+  width: 100%;
+  max-width: 600px;
+  height: 150px;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: center;
+}
+
+.dino-runner {
+  width: 44px;
+  height: 47px;
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  margin-left: -22px;
+  z-index: 2;
+}
+  animation:{
+    dinoRun 0.25s infinite steps(2),
+    dinoJump 1.5s infinite linear;
+}
+
+.dino-obstacle {
+  width: 17px;
+  height: 35px;
+  position: absolute;
+  bottom: 12px;
+  right: -50px;
+  z-index: 1;
+}
