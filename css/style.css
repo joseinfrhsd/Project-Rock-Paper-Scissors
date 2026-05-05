@@ -1,34 +1,95 @@
-.dino-loader {
-  width: 100%;
-  max-width: 600px;
-  height: 150px;
+body{
+background-image:url("../img/cool.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+min-height: 100vh;
+}
+.text-center{
+    font-family: "Sekuya", system-ui;
+    font-weight: 400;
+     font-style: normal;
+     color:bisque;
+}
+.card{
+  background:#C7A5D0;
+  border:2px solid #ff00d4;
+  
+}
+
+.button {
   position: relative;
-  overflow: hidden;
-  margin: 0 auto;
-  border-bottom: 1px solid #ddd;
+  border: none;
+  background: transparent;
+  padding: 0;
+  outline: none;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+
+.button .shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(58, 14, 74, 0.25);
+  border-radius: 8px;
+  transform: translateY(2px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
+}
+
+
+.button .edge{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: linear-gradient(
+    to left,
+    hsl(0, 71%, 52%) 0%,
+    hsl(65, 87%, 72%) 8%,
+    hsl(193, 74%, 64%) 92%,
+    hsl(279, 77%, 69%) 100%
+  );
+}
+
+.button .front {
+  position: relative;
   display: flex;
+  align-items: center;
   justify-content: center;
+  padding: 12px;
+  font-size: 1.25rem;
+  color: white;
+  background: hsl(0, 2%, 13%);
+  border-radius: 8px;
+  transform: translateY(-4px);
+  transition: transform 600ms cubic-bezier(0.3, 0.7, 0.4, 1);
 }
 
-.dino-runner {
-  width: 44px;
-  height: 47px;
-  position: absolute;
-  bottom: 12px;
-  left: 50%;
-  margin-left: -22px;
-  z-index: 2;
-}
-  animation:{
-    dinoRun 0.25s infinite steps(2),
-    dinoJump 1.5s infinite linear;
+.button:hover .shadow {
+  transform: translateY(4px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
 }
 
-.dino-obstacle {
-  width: 17px;
-  height: 35px;
-  position: absolute;
-  bottom: 12px;
-  right: -50px;
-  z-index: 1;
+.button:hover .front {
+  transform: translateY(-6px);
+  transition: transform 250ms cubic-bezier(0.3, 0.7, 0.4, 1.5);
+}
+
+.button:active .shadow {
+  transform: translateY(1px);
+  transition: transform 34ms;
+}
+
+.button:active .front {
+  transform: translateY(-2px);
+  transition: transform 34ms;
+}
+
+.button .front span {
+  user-select: none;
 }
