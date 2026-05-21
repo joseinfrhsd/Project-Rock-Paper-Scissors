@@ -13,6 +13,10 @@
     href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Boldonse&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sekuya&display=swap"
     rel="stylesheet">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Boldonse&family=Bruno+Ace+SC&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sekuya&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="css/style.css">
 
   <title>Project</title>
@@ -23,44 +27,73 @@
     <div class="text-center">
       <h1>Rock Paper Scissor</h1>
     </div>
-    <div class="row justify-content-around">
+    <div class="row justify-content-center">
+      <div class="row"></div>
       <div class="mb-3">
-  <label for="formGroupExampleInput" class="form-label">Player Name:</label>
-  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
+  <label for="formGroupExampleInput" class="form-label" style="margin-top: 50px;">Player Name:</label>
+  <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Type your name here...">
 </div>
-<button class="button">
+</div>
+<div class="row">
+<button class="button" style="margin-top: 50px;">
   <span class="shadow"></span>
   <span class="edge"></span>
   <div class="front">
     <span>Computer</span>
   </div>
 </button>
+</div>
 
-    <div class="card" style="width: 18rem;">
-      <img src="img/rock.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Rock</h5>
-        <p class="card-text">will you pick rock?</p>
-        <a href="#" class="btn btn-primary">Play Rock</a>
+    <div class="row justify-content-center" style="margin-top: 20px;">
+      <div class="loader">
+        <div class="loading-text">
+          Loading<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span>
+        </div>
+        <div class="loading-bar-background">
+          <div class="loading-bar">
+            <div class="white-bars-container">
+              <div class="white-bar"></div>
+              <div class="white-bar"></div>
+              <div class="white-bar"></div>
+              <div class="white-bar"></div>
+              <div class="white-bar"></div>
+              <div class="white-bar"></div>
+              <div class="white-bar"></div>
+              <div class="white-bar"></div>
+              <div class="white-bar"></div>
+              <div class="white-bar"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="card" style="width: 18rem;">
-      <img src="img/paper.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Paper</h5>
-        <p class="card-text">will you pick paper?</p>
-        <a href="#" class="btn btn-primary">Play Paper</a>
+
+    <div class="row justify-content-around" style="margin-top: 100px;">
+      <div class="card" style="width: 18rem;">
+        <img src="img/rock.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Rock</h5>
+          <p class="card-text">will you pick rock?</p>
+          <a href="#" class="btn btn-primary">Play Rock</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="img/paper.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Paper</h5>
+          <p class="card-text">will you pick paper?</p>
+          <a href="#" class="btn btn-primary">Play Paper</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img src="img/scissors.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Scissors</h5>
+          <p class="card-text">will you pick scissors?</p>
+          <a href="#" class="btn btn-primary">Play Scissor</a>
+        </div>
       </div>
     </div>
-    <div class="card" style="width: 18rem;">
-      <img src="img/scissors.jpg" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">Scissors</h5>
-        <p class="card-text">will you pick scissors?</p>
-        <a href="#" class="btn btn-primary">Play Scissor</a>
-      </div>
-    </div>
-  </div>
   </div>
 
 </body>
